@@ -1,8 +1,202 @@
-img {
-    width: 400px;
+:root {
+    --text-size: 20px;
 }
 
 body {
+    font-size: var(--text-size);  
+    /* font-family: 'Tahoma', Arial, sans-serif; */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+    /* font-family: 'Courier New', 'Comic Sans MS', cursive, sans-serif; */
+    /* background-color: blanchedalmond;  */
+}
+
+nav a{
+    margin: 2%;
+}
+
+.name p {
+    font-size: var(--text-size); 
+    --text-size: 30px; 
+    margin: 1%;
+}
+
+#animateName {
+    /* font-size: 24px; */
+    text-align: center;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for scaling down if needed */
+    font-size: var(--text-size); 
+    --text-size: 30px; 
+    margin: 1%;
+}
+
+img {
+    width: 400px;
+    height: auto;
+}
+
+#Intern {
+    padding: 1%;
+}
+
+
+#Intern img {
+    width: 100px;
+    height: auto;
+}
+
+#Yoho img {
+    width: 130px;
+    height: auto;
+}
+
+#CSAcademy img {
+    width: 180px;
+    height: auto;
+}
+
+
+
+.Time{
+    font-size: 14px;
+    /* margin-top: -20px; */
+}
+
+#Portfolio_Image{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#About {
+    display: flex;
+    align-items: center; /* This centers the children vertically */
+    justify-content: center; /* This centers the children horizontally */
+    height: 100%; /* Adjust this as needed, could be specific height like 200px */
+    margin-right: 10%;
+}
+
+#About p {
+    margin-top: 0; 
+}
+
+#Professional {
+    margin-top: 2%;
+
+}
+
+#Professional p{
+
+    margin-top: 0;
+
+}
+
+#CS_Academy {
+    margin-top: 2%;
+}
+
+
+
+/* :root {
+    --text-size: 16px;
+  }
+  
+  When the screen is or less than 768px:
+  @media (max-width: 768px) {
+    :root {
+      --text-size: 14px;
+    }
+  }
+  
+  body {
+    font-size: var(--text-size);
+  } */
+
+
+
+/* body {
 	font-family: Verdana, sans-serif;
     background-color: blanchedalmond;
+} */
+
+.typewriter {
+    /* The font settings for the typewriter effect */
+    /* font-family: 'Courier New', Courier, monospace; */
+    white-space: nowrap; /* Ensures the text stays in a single line */
+    overflow: hidden; /* Ensures the overflow is hidden */
+    border-right: .12em solid black; /* The typewriter cursor */
+    
+    /* The width of the container/element should be set to fit the largest possible content */
+    width: 15ch; /* ch units represent the width of the '0' character */
+    /* Animation */
+    animation: typing 4s steps(15), blink-caret .5s step-end infinite alternate;
+  }
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 15ch; } /* Set the same width as the element's width */
 }
+
+/* The caret/cursor blink effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+
+
+
+
+
+
+
+/* Styling below is for the animated color gliding in section from the #About section */
+
+#About {
+    position: relative; /* This establishes a positioning context for the pseudo-element */
+    overflow: auto; /* Ensures the animation is clipped to this container's bounds */
+    margin: 0%;
+}
+
+#About::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%; /* Start from outside the view on the right */
+    bottom: 0;
+    left: 0;
+    background-color: #316cf4; /* The animated background color */
+    z-index: -1; /* Places the pseudo-element behind the container content */
+    animation: slideIn 2s forwards; /* Complete the animation in 2 seconds and stay at the final state */
+}
+
+@keyframes slideIn {
+    to {
+        right: 0; /* Move the pseudo-element to cover the container from the right */
+    }
+}
+
+/* Make sure the content of the container has a higher z-index than the background */
+#About > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+
+
+
+
+
+
+
+
+  
