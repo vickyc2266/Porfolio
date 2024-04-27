@@ -1,38 +1,28 @@
-
-
-// import { animate } from "popmotion";
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const nameElement = document.getElementById('animateName');
-//   if (nameElement) {
-//     animate({
-//       from: 1,
-//       to: 1.5,
-//       onUpdate: latest => {
-//         nameElement.style.transform = `scale(${latest})`;
-//       }
-//     });
-//   } else {
-//     console.error('Element with ID animateName was not found.');
-//   }
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
+    // Array of different text values to cycle through that describes who I am
     const texts = ["Mentor", "Developer", "Product Manager", "Student"];
     let index = 0;
+    // Get the DOM element where the dynamic text should be displayed
     const textElement = document.getElementById('dynamicText');
 
+    //Function that updates the text in the 'textElement'
     function updateText() {
+        // Remove the 'fade-in' class to trigger any associated fade out effects
         textElement.classList.remove('fade-in');
+        // Use 'setTimeout' to delay the update, allowing any fade-out effects to complete
         setTimeout(() => {
             textElement.textContent = texts[index];
+            // Add the 'fade-in' class to trigger the fade-in effect
             textElement.classList.add('fade-in');
-            index = (index + 1) % texts.length; // Loop back to the first item after the last
-        }, 500); // Change text after fading out
+            // Increment the index, and use modulo to loop back to the first item after the last
+            index = (index + 1) % texts.length;
+        }, 500); // Wait 500 milliseconds before updating the text to allow for the fade-out
     }
 
-    setInterval(updateText, 1500); // Change text every 3000 milliseconds to allow fade in/out
+    // Use 'setInterval' to call 'updateText' every 2000 milliseconds, cycling through the text values
+    setInterval(updateText, 2000); 
 });
+
 
 
 

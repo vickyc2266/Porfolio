@@ -1,19 +1,19 @@
+/* Styling for the h1 of all the courses files */
 h1 {
     margin: 1%;
 }
 
 h1 a {
-    color: inherit;             /* Makes the link the same color as the parent element */
-    text-decoration: none;      /* Removes the underline from the link */
-    /* Add any other styles you might need */
-  }
-  
+    color: inherit;             
+    text-decoration: none;      
+}
+
 h1 a:hover, h1 a:focus {
-text-decoration: underline; /* Optionally add underline on hover for visual feedback */
+text-decoration: underline; 
 
 }
 
-
+/* Styling for the font of the drop down titles */
 .accordion-button {
     font-size: 0.65em; /* 1.5 times the size of the button's current font size */
     font-style: italic;
@@ -24,32 +24,37 @@ text-decoration: underline; /* Optionally add underline on hover for visual feed
     background-color: #007bff; /* Bootstrap primary color for example */
     color: white;
 }
-  
 
+/* Styling for the accordion-body text */
+.accordion-body {
+    font-size: 0.8em;
+}
+  
+/* Styling for the h3 of all the course files */
 h3 {
     margin: 1%;
     margin-top: 2%;
 }
 
+/* Styling for the p of the Course files */
 p{ 
     margin-left: 2%;
     margin-right: 2%;
 }
 
-h5{
-    font-weight: bold;
-    font-style: italic;
-}
 
+/* Styling for the h4 of the Course files */
 h4{
     margin: 3%;
     text-decoration: underline;
 }
 
+/* Styling for the list of the Course files */
 ul {
     margin: 2%;
 }
 
+/* Styling for the Project Descriptions */
 .GCPDdescript, 
 .BakeOffdescript,
 .LLLdescript {
