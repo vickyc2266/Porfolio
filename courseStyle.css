@@ -54,6 +54,10 @@ ul {
     margin: 2%;
 }
 
+h5 {
+    margin-top: 5%;
+}
+
 /* Styling for the Project Descriptions */
 .GCPDdescript, 
 .BakeOffdescript,
