@@ -9,18 +9,18 @@
         <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" type="text/css" />
         <link rel="stylesheet" href="courseStyle.css" type="text/css" />
-
         <script src="java.js" defer></script>
-
-
     </head>
 
     <body>
 
+        <!-- Header at the very top of every page -->
         <div class="top d-flex justify-content-between">
+            <!-- Animated name here -->
             <div class="col-lg-6" id="animateName">
                 <p class="typewriter">Vicky Chen</p>
             </div>
+            <!-- Nav bar with links here -->
             <nav class="col-lg-6 d-flex justify-content-center">
                 <a href="index.html#About">About Me</a>
                 <a href="index.html#Professional">Professional</a>
@@ -29,9 +29,7 @@
             </nav>
         </div>
 
-
-
-
+        <!-- Title of Course with Link to Course Website -->
         <h1><a href="https://www.cs.cmu.edu/~112/" title=" CMU Application Design and Development">15-112 Fundamentals of Computer Science and Programming</a></h1>
 
         <div id = "course">
@@ -39,10 +37,12 @@
             <div class = "Activity" id = "course1obj">
 
                 <h3>Course Activity:</h3> 
-            
 
                 <div class="accordion" id="accordionExample">
-  
+
+                    <!-- Section of drop down buttons of activities performed in class -->
+                    
+                    <!-- DropDown 1 -->
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -56,6 +56,7 @@
                       </div>
                     </div>
                     
+                    <!-- DropDown 2 -->
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -69,6 +70,7 @@
                       </div>
                     </div>
                     
+                    <!-- DropDown 3 -->
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -82,6 +84,7 @@
                       </div>
                     </div>
 
+                    <!-- DropDown 4 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -95,6 +98,7 @@
                         </div>
                     </div>
 
+                    <!-- DropDown 5 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFive">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -108,6 +112,7 @@
                         </div>
                     </div>
 
+                    <!-- DropDown 6 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSix">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -121,7 +126,7 @@
                         </div>
                     </div>
 
-
+                    <!-- DropDown 7 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingSeven">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -137,56 +142,50 @@
                   
                   </div>
                   
-                  
                 </div>
 
             </div>
-
-
-
-
-            </div>
-
-            <div class = "Skills" id = "course1obj">
-
-                <h3>Technologies and Skills Obtained and Applied:</h3>
-
-                <ul>
-                    <li>Python</li>
-                    <li>Figma</li>
-                </ul>
-
-            </div>
-
-            <div class = "Project" id = "course1obj">
-                <h3>Projects</h3>
-                <h4>Live Laugh and Love Yourself Calendar</h4>
-                
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class = "LLLdescript">
-                                This project involves the development of a full-stack application designed to organize and 
-                                categorize users' tasks, schedules, and workloads, ensuring a balance with other essential 
-                                life activities. It includes a Python-based feature for automated daily planning, enhancing 
-                                productivity and time management.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <video width="100%" height="auto" controls>
-                                <source src="./videos/LL&L.mov" type="video/mp4">
-                                Video showcasing the Live Laugh and Love Yourself Calendar
-                            </video>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-                
 
         </div>
+
+        <!-- Section Listing different types of skills used/obtained from Course -->
+        <div class = "Skills" id = "course1obj">
+            <h3>Technologies and Skills Obtained and Applied:</h3>
+            <ul>
+                <li>Python</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+
+        <!-- Section describing project performed from the Course -->
+        <div class = "Project" id = "course1obj">
+            <h3>Projects</h3>
+            <h4>Live Laugh and Love Yourself Calendar</h4>
+            
+
+            <div class="container">
+                <div class="row">
+                    <!-- Description of the Project -->
+                    <div class="col-md-6">
+                        <p class = "LLLdescript">
+                            This project involves the development of a full-stack application designed to organize and 
+                            categorize users' tasks, schedules, and workloads, ensuring a balance with other essential 
+                            life activities. It includes a Python-based feature for automated daily planning, enhancing 
+                            productivity and time management.
+                        </p>
+                    </div>
+                    <!-- Video Showcasing Project -->
+                    <div class="col-md-6">
+                        <video width="100%" height="auto" controls>
+                            <source src="./videos/LL&L.mov" type="video/mp4">
+                            Video showcasing the Live Laugh and Love Yourself Calendar
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
 
     </body>
 </html>
