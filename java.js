@@ -18,7 +18,7 @@
 // });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const texts = ["Mentor", "Developer", "Product Manager"];
+    const texts = ["Mentor", "Developer", "Product Manager", "Student"];
     let index = 0;
     const textElement = document.getElementById('dynamicText');
 

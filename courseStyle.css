@@ -1,0 +1,58 @@
+h1 {
+    margin: 1%;
+}
+
+h1 a {
+    color: inherit;             /* Makes the link the same color as the parent element */
+    text-decoration: none;      /* Removes the underline from the link */
+    /* Add any other styles you might need */
+  }
+  
+h1 a:hover, h1 a:focus {
+text-decoration: underline; /* Optionally add underline on hover for visual feedback */
+
+}
+
+
+.accordion-button {
+    font-size: 0.65em; /* 1.5 times the size of the button's current font size */
+    font-style: italic;
+
+}
+
+.accordion-button:hover {
+    background-color: #007bff; /* Bootstrap primary color for example */
+    color: white;
+}
+  
+
+h3 {
+    margin: 1%;
+    margin-top: 2%;
+}
+
+p{ 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h5{
+    font-weight: bold;
+    font-style: italic;
+}
+
+h4{
+    margin: 3%;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 2%;
+}
+
+.GCPDdescript, 
+.BakeOffdescript,
+.LLLdescript {
+    margin-top: 3%;
+    margin-right: 20%;
+}

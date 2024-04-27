@@ -4,40 +4,66 @@
 
 body {
     font-size: var(--text-size);  
-    /* font-family: 'Tahoma', Arial, sans-serif; */
     font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
-    /* font-family: 'Courier New', 'Comic Sans MS', cursive, sans-serif; */
-    /* background-color: blanchedalmond;  */
 }
+
+nav {
+    overflow-x: auto;
+    display: flex;
+    padding: 10px 0; 
+    
+}
+
+/* nav .right-aligned {
+    margin-left: auto;
+} */
 
 nav a{
-    margin: 2%;
+    margin: 0 15px; 
+    white-space: nowrap;
+    flex-shrink: 0;
+    
 }
 
+/* CHECK WHAT THIS IS FOR/MAYBE DISCARD/USELESS */
 .name p {
     font-size: var(--text-size); 
     --text-size: 30px; 
     margin: 1%;
 }
 
+/* Styling starting here for name animation */
 #animateName {
-    /* font-size: 24px; */
     text-align: center;
-    transition: transform 0.5s ease-in-out; /* Smooth transition for scaling down if needed */
+    transition: transform 0.5s ease-in-out; 
     font-size: var(--text-size); 
     --text-size: 30px; 
+}
+
+#animateName .typewriter {
+    transform: translateY(15%); 
+}
+
+/* Styling here for inline rotating text */
+#dynamicText {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
     margin: 1%;
 }
 
+
+/* DOUBLE CHECK IF THIS IS FOR GENERAL IMAGE OR IF UNNCESSARY */ 
+/* Already a styling for headshot below around line 90 */
 img {
     width: 400px;
     height: auto;
 }
 
+
+/* Styling here for brand/logo images and Profession related content*/
 #Intern {
     padding: 1%;
 }
-
 
 #Intern img {
     width: 100px;
@@ -55,22 +81,24 @@ img {
 }
 
 
-
+/* Styling here for Intern/Professional related timeframes */
 .Time{
     font-size: 14px;
-    /* margin-top: -20px; */
 }
 
+/* Styling for head shot */
 #Portfolio_Image{
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
+
+/* Styling for the About section of website */
 #About {
     display: flex;
-    align-items: center; /* This centers the children vertically */
-    justify-content: center; /* This centers the children horizontally */
-    height: 100%; /* Adjust this as needed, could be specific height like 200px */
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
     margin-right: 10%;
 }
 
@@ -78,56 +106,56 @@ img {
     margin-top: 0; 
 }
 
+/* Stylign for the Profession related content of website */
 #Professional {
     margin-top: 2%;
-
 }
 
 #Professional p{
 
     margin-top: 0;
-
 }
 
+/* DOUBLE CHECK IF THIS IS NEEDED FOR ID DOES NOT SEEMTO EXIST IN INDEX */
 #CS_Academy {
     margin-top: 2%;
 }
 
+/* Styling for the Course section of website */
+#Course {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+#section-title {
+    margin-bottom: 4%;
+    
+}
+
+/* Styling for the 112 Dragon logo */
+#Dragon {
+    width: 100%;       
+    height: auto;      
+    object-fit: cover; 
+    min-height: 300px;
+}
 
 
-/* :root {
-    --text-size: 16px;
-  }
-  
-  When the screen is or less than 768px:
-  @media (max-width: 768px) {
-    :root {
-      --text-size: 14px;
-    }
-  }
-  
-  body {
-    font-size: var(--text-size);
-  } */
-
-
-
-/* body {
-	font-family: Verdana, sans-serif;
-    background-color: blanchedalmond;
-} */
 
 .typewriter {
     /* The font settings for the typewriter effect */
     /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Brush Script MT', cursive;
     white-space: nowrap; /* Ensures the text stays in a single line */
     overflow: hidden; /* Ensures the overflow is hidden */
     border-right: .12em solid black; /* The typewriter cursor */
+    font-size: 50px;
     
     /* The width of the container/element should be set to fit the largest possible content */
     width: 15ch; /* ch units represent the width of the '0' character */
     /* Animation */
     animation: typing 4s steps(15), blink-caret .5s step-end infinite alternate;
+    
   }
   
 /* The typing effect */
@@ -145,26 +173,24 @@ img {
 
 
 
-
-
-
-
 /* Styling below is for the animated color gliding in section from the #About section */
 
-#About {
-    position: relative; /* This establishes a positioning context for the pseudo-element */
-    overflow: auto; /* Ensures the animation is clipped to this container's bounds */
+#About{
+    position: relative; 
+    overflow: auto; 
     margin: 0%;
 }
 
-#About::before {
+#About::before{
     content: "";
     position: absolute;
     top: 0;
     right: 100%; /* Start from outside the view on the right */
     bottom: 0;
     left: 0;
-    background-color: #316cf4; /* The animated background color */
+    /* background-color: #316cf4;  */
+    /* background: linear-gradient(to top, #acc8ed, #316cf4, #1f3978); */
+    background: linear-gradient(to bottom, #acc8ed, #316cf4, #2bdbd8);
     z-index: -1; /* Places the pseudo-element behind the container content */
     animation: slideIn 2s forwards; /* Complete the animation in 2 seconds and stay at the final state */
 }
@@ -176,7 +202,7 @@ img {
 }
 
 /* Make sure the content of the container has a higher z-index than the background */
-#About > * {
+#About > *{
     position: relative;
     z-index: 1;
 }
@@ -185,10 +211,94 @@ img {
 
 
 
+
+
+
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+    
   }
+
+
+
+/* This is how you typically adjust font sizes for different screen widths */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 430px) {
+    nav a {
+      font-size: 10px;
+      padding: 5px; /* Reduced padding */
+      margin: 0; /* Remove margin or reduce it */
+    }
+
+    nav {
+        width: 100%; /* Ensure nav takes full width */
+    }
+
+    .typewriter {
+        font-size: 18px;
+       
+    }
+
+    #animateName .typewriter {
+        transform: translateY(30%); /* Adjust this value as needed */
+    
+    }
+
+    #Intern {
+        padding: 4%;
+    }
+
+    #CourseObj {
+        margin-bottom: 3%;
+    }
+
+    #course1obj {
+        margin-top: 10%;
+    }
+
+
+  }
+
+  /* @media only screen and (max-width: 428px) {
+    nav {
+      width: 100%; 
+    }
+  } */
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    nav a {
+      font-size: 14px;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    nav a {
+      font-size: 16px;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    nav a {
+      font-size: 18px;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    nav a {
+      font-size: 20px;
+    }
+  }
+
+
+
+  
+  
 
 
 
