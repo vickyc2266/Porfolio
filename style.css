@@ -14,9 +14,6 @@ nav {
     
 }
 
-/* nav .right-aligned {
-    margin-left: auto;
-} */
 
 nav a{
     margin: 0 15px; 
@@ -25,12 +22,6 @@ nav a{
     
 }
 
-/* CHECK WHAT THIS IS FOR/MAYBE DISCARD/USELESS */
-.name p {
-    font-size: var(--text-size); 
-    --text-size: 30px; 
-    margin: 1%;
-}
 
 /* Styling starting here for name animation */
 #animateName {
@@ -52,8 +43,7 @@ nav a{
 }
 
 
-/* DOUBLE CHECK IF THIS IS FOR GENERAL IMAGE OR IF UNNCESSARY */ 
-/* Already a styling for headshot below around line 90 */
+/* styling for the profile picture */
 img {
     width: 400px;
     height: auto;
@@ -116,11 +106,6 @@ img {
     margin-top: 0;
 }
 
-/* DOUBLE CHECK IF THIS IS NEEDED FOR ID DOES NOT SEEMTO EXIST IN INDEX */
-#CS_Academy {
-    margin-top: 2%;
-}
-
 /* Styling for the Course section of website */
 #Course {
     width: 100%;
@@ -141,27 +126,22 @@ img {
 }
 
 
-
+/* Styling here for name animation that's on every page */
 .typewriter {
-    /* The font settings for the typewriter effect */
-    /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Brush Script MT', cursive;
-    white-space: nowrap; /* Ensures the text stays in a single line */
-    overflow: hidden; /* Ensures the overflow is hidden */
-    border-right: .12em solid black; /* The typewriter cursor */
-    font-size: 50px;
-    
-    /* The width of the container/element should be set to fit the largest possible content */
-    width: 15ch; /* ch units represent the width of the '0' character */
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: .10em solid black; 
+    font-size: 45px;
+    width: 15ch;
     /* Animation */
     animation: typing 4s steps(15), blink-caret .5s step-end infinite alternate;
     
   }
-  
 /* The typing effect */
 @keyframes typing {
     from { width: 0; }
-    to { width: 15ch; } /* Set the same width as the element's width */
+    to { width: 15ch; } 
 }
 
 /* The caret/cursor blink effect */
@@ -170,11 +150,7 @@ img {
     50% { border-color: black; }
 }
 
-
-
-
 /* Styling below is for the animated color gliding in section from the #About section */
-
 #About{
     position: relative; 
     overflow: auto; 
@@ -185,11 +161,9 @@ img {
     content: "";
     position: absolute;
     top: 0;
-    right: 100%; /* Start from outside the view on the right */
+    right: 100%; 
     bottom: 0;
     left: 0;
-    /* background-color: #316cf4;  */
-    /* background: linear-gradient(to top, #acc8ed, #316cf4, #1f3978); */
     background: linear-gradient(to bottom, #acc8ed, #316cf4, #2bdbd8);
     z-index: -1; /* Places the pseudo-element behind the container content */
     animation: slideIn 2s forwards; /* Complete the animation in 2 seconds and stay at the final state */
@@ -207,24 +181,17 @@ img {
     z-index: 1;
 }
 
-
-
-
-
-
-
-
+/* Styling here for the Courses Card at the bottom of the index page */
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
-    
-  }
+}
 
 
 
 /* This is how you typically adjust font sizes for different screen widths */
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 430px and down) */
 @media only screen and (max-width: 430px) {
     nav a {
       font-size: 10px;
@@ -258,14 +225,9 @@ img {
         margin-top: 10%;
     }
 
+}
 
-  }
 
-  /* @media only screen and (max-width: 428px) {
-    nav {
-      width: 100%; 
-    }
-  } */
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
